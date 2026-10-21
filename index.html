@@ -123,7 +123,8 @@
             </div>
         </div>
         <div class="flex-1 w-full bg-black relative flex items-center justify-center overflow-hidden" id="iframeContainer">
-            <iframe id="gameIframe" class="w-full h-full border-0" src="" allowfullscreen allow="autoplay; gamepad; fullscreen"></iframe>
+            <!-- الـ iframe هنا متزود بخواص الـ sandbox اللازمة لإعلانات المكافآت وتدبيل الهدايا -->
+            <iframe id="gameIframe" class="w-full h-full border-0" src="" allowfullscreen allow="autoplay; gamepad; fullscreen" sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-pointer-lock"></iframe>
         </div>
     </div>
 
